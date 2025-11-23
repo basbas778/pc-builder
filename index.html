@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PC Builder - แนะนำสเปคตามงบ</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+<h1>PC Builder</h1>
+<p>ใส่งบประมาณ (บาท) แล้วกด "สร้างสเปค" เว็บจะแนะนำชิ้นส่วนให้ครบเครื่อง</p>
+
+
+<div class="form-row">
+<input id="budgetInput" type="number" placeholder="เช่น 20000" min="1000" />
+<button id="buildBtn">สร้างสเปค</button>
+</div>
+
+
+<div id="resultArea" class="result">
+<p class="hint">ยังไม่มีผลลัพธ์ — ใส่งบแล้วกดปุ่ม</p>
+</div>
+
+
+<details class="explain">
+<summary>วิธีคำนวณ (สั้น ๆ)</summary>
+<p>โค้ดจะกระจายงบตามน้ำหนัก (CPU/GPU สูงกว่า) แล้วเลือกชิ้นส่วนที่ราคาพอดีหรือใกล้เคียงที่สุดจากฐานข้อมูลที่ฝังไว้ใน `script.js`</p>
+</details>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
